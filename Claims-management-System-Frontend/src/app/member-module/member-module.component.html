@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+ 
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js">
+  <title>Claim Management System</title>
+</head>
+ 
+<body>
+  <!--Nav bar-->
+
+  <nav class="navbar navbar-expand-lg navbar-dark bg-green">
+    
+    <div class="collapse navbar-collapse" id="navbarText" >
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item  active">
+          <a class="nav1 " href="/memberModule">Home <span class="sr-only"></span></a>
+        </li>
+        <li class="nav-item ">
+          <a class="nav1" (click)="onLogout()" href="#">Logout</a>
+        </li>
+      
+      </ul>  
+    </div>
+    <a class="navbar-brand justify-content-center" href="/memberModule">Welcome, {{key1}}! </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  </nav>
+   <!--nav bar end-->
+
+  <!--body-->
+ 
+  <div class="row module-body">
+    <div class="row p-3">
+      <div class="col-sm-4">
+        <div class="card " >
+          <img class="card-img-top " src="../../assets/image/bill2.jpg" alt="Card image cap">
+          <div class="card-body ">
+            <h5 class="card-title text-center">View Bill</h5>
+            <p class="card-text text-center" >Select to view your Bill.</p>
+            <div class="text-center ">
+            <a accesskey="v" href="/memberdetailsModule" class="btn btn-success btn-md active justify-content-center clr1" role="button" aria-pressed="true">View Bills</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <div class="card" >
+          <img class="card-img-top " src="../../assets/image/submit-claims.jpg" alt="Card image cap">
+          <div class="card-body ">
+            <h5 class="card-title text-center">Submit Claim</h5>
+            <p class="card-text text-center">Select to submit your Claim.</p>
+            <div class="text-center">
+            <a accesskey="s" href="/submitInput" class="btn btn-success btn-md active justify-content-center clr1" role="button" aria-pressed="true">Submit Claim</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <div class="card" >
+          <img class="card-img-top  " src="../../assets/image/bill.jpg" alt="Card image cap">
+          <div class="card-body ">
+            <h5 class="card-title text-center">Claim Status</h5>
+            <p class="card-text text-center">Select to check status of your Claim</p>
+            <div class="text-center">
+            <a accesskey="c" href="/claimInput" class="btn btn-success btn-md active justify-content-center clr1" role="button" aria-pressed="true">Claim Status</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+     
+    </div>
+   <!--body end-->
+  
+</body>
+
+</html>

@@ -1,0 +1,70 @@
+.bg-green{
+    color:white;
+    background-color: #198553;
+    
+    
+}
+
+.nav-link:hover{
+    text-decoration: white;
+}
+.nav1{
+   
+    color: white;
+    text-decoration: none;
+    
+    padding-left: 10px;
+}
+
+.nav2{
+   
+    color: white;
+    text-decoration: none;
+   
+    padding-left: 20px;
+    
+    
+}
+
+.nav3{
+    width: 100%;
+    float: right;
+    
+}
+
+
+.footer {
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+  }
+  .fottext{
+      padding-left: 20px;
+  }
+#f{
+    color: white;
+  }
+button{
+    background-color: #198553;
+    color: white;
+    margin-left: 34%;
+    min-width: 20%;
+    text-align: center;
+}
+.card{
+    margin-top: 10%;
+}
+.btn2{
+    margin-left: 70%;
+    
+    padding: 5px 10px 5px 10px;
+}
+.btn3{
+    margin-left: 15%;
+    padding: 5px 17px 5px 10px;
+}
+button:hover {
+    color:white;
+}
+
+

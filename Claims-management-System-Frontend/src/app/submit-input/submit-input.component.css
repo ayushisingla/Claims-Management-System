@@ -1,0 +1,79 @@
+.bg-green{
+    color:white;
+    background-color: #198553;
+    
+    
+}
+.card{
+    margin-top: 30px;
+}
+
+
+
+.nav-link:hover{
+    text-decoration: white;
+}
+.nav1{
+   
+    color: white;
+    text-decoration: none;
+    
+    padding-left: 10px;
+}
+
+.nav2{
+   
+    color: white;
+    text-decoration: none;
+   
+    padding-left: 20px;
+    
+    
+}
+
+.nav3{
+    width: 100%;
+    float: right;
+    
+}
+
+
+.footer {
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+  }
+  .fottext{
+      padding-left: 20px;
+  }
+#f{
+    color: white;
+  }
+button{
+    background-color: #198553;
+    color: white;
+    
+    min-width: 20%;
+    text-align: center;
+}
+
+.btn2{
+    margin-left: 70%;
+    
+    padding: 5px 10px 5px 10px;
+}
+.btn3{
+    margin-left: 15%;
+    padding: 5px 17px 5px 10px;
+}
+button:hover {
+    color:white;
+}
+
+.clr1{
+    background-color: #198553;
+}
+
+.input1{
+    max-width: 50%;
+}

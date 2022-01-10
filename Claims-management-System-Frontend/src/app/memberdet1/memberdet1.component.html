@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+ 
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js">
+  <title>Claim Management System</title>
+</head>
+ 
+<body>
+  <!--Nav bar-->
+
+  <nav class="navbar navbar-expand-lg navbar-dark bg-green">
+    
+    <div class="collapse navbar-collapse" id="navbarText" >
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item  active">
+          <a class="nav1 " href="/memberModule">Home <span class="sr-only"></span></a>
+        </li>
+        
+        <li class="nav-item ">
+          <a class="nav1" (click)="onLogout()" href="#">Logout</a>
+        </li>
+      
+      </ul>  
+    </div>
+
+    <a class="navbar-brand justify-content-center" href="/memberdetailsModule">Claims Management System</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  </nav>
+  <!-- Nav Bar end -->
+  <!-- Body -->
+  <div class="row">
+    <div class="col-sm-3" >
+      
+      
+    </div>
+    <div class="col-sm-6 justify-content-center" >
+  <div class="card " style="box-shadow: 0px 4px 8px 0px #757575;">
+    <div class="card " style="margin-top: 0;box-shadow: 0px 4px 8px 0px #757575;">
+            <div class="card-body">
+              <h5 class="card-title text-center" style="margin-bottom: 30px;">Please find your details below</h5>
+        <table class="table table-hover">
+            <thead>
+              <tr>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                
+                <td>Premium : </td>
+                <td>{{res.premium}}</td>
+                
+              </tr>
+              <tr>
+                
+                <td>Paid Date : </td>
+                <td>{{res.paidDate}}</td>
+                
+              </tr>
+              <tr>
+               
+                <td>Due Date : </td>
+                <td>{{res.dueDate}}</td>
+                
+              </tr>
+              <tr>
+                
+                <td>Late Payement : </td>
+                <td>{{res.latePayment}}</td>
+              </tr>
+              <tr>
+                
+                <td>Late Payement Charges : </td>
+                <td>{{res.latePaymentCharges}}</td>
+              </tr>
+             
+            </tbody>
+          </table>
+      </div>
+      </div>
+    </div>
+    <div class="col-sm-3" ></div>
+</div>
+</div>
+  <!-- Body end -->
+</body>
+
+</html>

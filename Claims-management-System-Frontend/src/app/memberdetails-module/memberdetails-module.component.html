@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+ 
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js">
+  <title>Claim Management System</title>
+</head>
+ 
+<body>
+  <!--Nav bar-->
+
+  <nav class="navbar navbar-expand-lg navbar-dark bg-green">
+    
+    <div class="collapse navbar-collapse" id="navbarText">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item  active">
+          <a class="nav1 " href="/memberModule">Home <span class="sr-only"></span></a>
+        </li>
+        <li class="nav-item ">
+          <a class="nav1" (click)="onLogout()" href="#">Logout</a>
+        </li>
+      
+      </ul>  
+    </div>
+
+    <a class="navbar-brand justify-content-center" href="/memberdetailsModule">Claims Management System</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  </nav>
+   <!-- nav Bar End -->
+  <!--body-->
+  <div class="row">
+    <div class="col-sm-3">
+
+    </div>
+  <div class="col-sm-6">
+  <div class="card " style="box-shadow: 0px 4px 8px 0px #757575;">
+    
+    <div class="card-body">
+      <h5 class="card-title text-center">Please provide following details:</h5>
+      <form #memberform="ngForm" (ngSubmit)="memberl()"> 
+        <div class="form-group row py-4 justify-content-center"  >
+          
+            <label for="inputPassword" class="col-sm-3 col-form-label"> Member ID</label>
+            
+            <div class="col-sm-5">
+              <input type="number" class="form-control" name="memberId" placeholder="Member ID" [(ngModel)]="member.memberId">
+            </div>
+        </div>
+        <div class="form-group row justify-content-center ">
+          <label for="inputPassword" class="col-sm-3 col-form-label">Policy ID</label>
+          <div class="col-sm-5">
+            <input type="number" class="form-control" name="policyId" placeholder="Policy ID" [(ngModel)]="member.policyId">
+          </div>
+        </div>
+        <div class="py-4 text-center" >
+            <button accesskey="s" type="submit" class="btn btn-success btn-md  active text-center clr1" >Submit</button>
+        </div>
+        <div class="text-center">
+        <small class="text-danger text-center"><b>{{errormsg}}</b></small>
+        </div>
+    </form>
+    </div>
+   
+  </div>
+</div>
+</div>
+  <!-- body end -->
+</body>
+
+</html>

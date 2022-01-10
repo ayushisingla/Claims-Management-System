@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet">
+  <title>Document</title>
+  
+</head>
+<body>
+  
+ 
+  <div class="container-fluid bg-white px-1 px-md-5 px-lg-1 px-xl-5 py-5 mx-auto">
+   
+    <div class="card card0 border-0">
+        <div class="row heading d-flex justify-content-center"> Claims Management System</div>
+        <div class="row d-flex mt-3">   
+            <div class="col-lg-3"></div> 
+                 <div class="col-lg-6">
+                    <form #loginform="ngForm" (ngSubmit)="loginUser()">
+                    <div class="card2 card border-0 px-4 ">
+                        <div  class="row px-3">
+                            <label class="mb-1">   
+                                <h6 class="mb-0 text-sm">Username:</h6>
+                            </label> 
+                            <input class="mb-4" type="text" name="username" #username="ngModel" [class.is-invalid]="username.invalid && username.touched" pattern1="[A-Z][a-z]+"  minlength="2" maxlength="10" class="form-control" placeholder="Enter a valid Username"  [(ngModel)]="user.username" required>
+                            <div *ngIf="username.errors && (username.invalid || username.touched)">
+                                <small [class.d-none]="username.valid || username.untouched" class="text-danger" *ngIf="username.errors.required">User Name is required</small>
+                                <small [class.d-none]="username.valid || username.untouched" class="text-danger" *ngIf="username.errors.pattern1">Enter a valid User Name</small>
+                                <small [class.d-none]="username.valid || username.untouched" class="text-danger" *ngIf="username.errors.minlength">Username wants atleast 2 characters valid</small>
+                            </div> 
+                        </div>
+                        <div class="row px-3 mt-3"> 
+                            <label class="mb-1">
+                                <h6 class="mb-0 text-sm">Password:</h6>
+                            </label> 
+                            <input type="password" name="password" placeholder="Enter password" [(ngModel)]="user.password" required> 
+                        </div>
+                       
+                        <small class="text-danger text-center"><b>{{errormsg}}</b></small>
+                        <div class="row mb-3 px-3 text-center btn"> 
+                            <button accesskey="l" type="submit" class="btn btn-success text-center">Login</button>
+                            <div class="hotkey">
+                            
+                            </div>  
+                        </div> 
+                        
+                          
+                    </div>
+                </form>
+                </div>
+            <div class="col-lg-3"></div>
+        </div>
+    </div>
+</div>
+</body>
+
+</html>
